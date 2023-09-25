@@ -1,0 +1,48 @@
+
+html{
+    background-color:rgb(43, 43, 43);
+}
+main.ContainerMovie{
+    border-radius: 10px;
+margin: 1% 5% 0% ;
+padding: 1%;
+height: 100%;
+background-color: rgb(34, 34, 34);
+}
+.conteinerContent{
+   display: flex;
+   
+}
+
+.conteinerContent_info{
+    max-width: 50%;
+    justify-content: center;
+    margin-left: 2%; 
+    color: white;
+    position: relative;
+}
+.overview{
+    font-size: 18px;
+    padding-bottom: 5%;
+}
+.conteinerContent_info svg{
+    color: rgb(235, 200, 1);
+    position: relative;
+    left:1%;
+    top: 10%;
+
+}
+.content_info{
+    justify-content:baseline;
+    flex-direction: column;
+    display: flex;
+    font-size: 18px;
+}
+.content_info p {
+    display: flex;
+}
+.conteinerContent_otherInfo{
+position: absolute;
+bottom: 0;  
+}
+

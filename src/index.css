@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./font/BebasNeue-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue';
+}

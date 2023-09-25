@@ -1,0 +1,102 @@
+.containerNav {
+    background-color: rgb(24, 24, 24);
+    padding-inline: 5%;
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.containerControll_link{
+    text-align: center;
+    width: 400px;
+    align-items: center;
+   justify-content: right;
+    display: flex;
+}
+.containerControll_link_uteis{
+    margin-right: 5%;
+}
+.containerControll_link_uteis a{
+    margin-right:10%;
+    text-decoration: none;
+    color: #FFFF;
+}
+.searchcontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+
+
+}
+
+form.searchcontainer_active {
+    width: 300px;
+}
+
+.searchinput {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 280px;
+    position: relative;
+}
+
+.searchinput input {
+    padding-inline: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.searchbutton {
+    background-color: #FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    right: 0;
+
+}
+
+.searchbutton span {
+    border: none;
+    font-size: 20px;
+}
+
+.searchbutton_actived{
+    padding-top: 5px;
+    border: none;
+    font-size: 20px;
+}
+.containerLink{
+    width: 20%;
+}
+.LinkIMG{
+font-size: 35px;
+text-decoration: none;
+color: #FFFF;
+position: relative;
+display: flex;
+align-items: center;
+}
+.LinkIMG p {
+    margin-left: -15px;
+    
+
+}
+.IMG{
+    margin-right: 0;
+    width: 100px;
+    height: 110px;
+}
