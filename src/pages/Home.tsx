@@ -45,10 +45,10 @@ function Home() {
                         </span>
 
                         <button onClick={()=>{
-                                    window.location.href = `/movie/${movie.id}`;
+                                    window.location.href = `/MoviesRating/movie/${movie.id}`;
                                 }} className={styles.conteinerContent_btn }> 
 
-                        <Link to={`/movie/${movie.id}`}>Detalhes</Link>   </button>
+                        <Link to={`/MoviesRating/movie/${movie.id}`}>Detalhes</Link>   </button>
                     </div>
 
                 )

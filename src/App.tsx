@@ -1,5 +1,5 @@
 import './App.css';
-import { Link,Outlet} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 import Nav from './components/Nav';
 
 function App() {
@@ -9,9 +9,6 @@ function App() {
   
       <div>
           <Nav/>
-       <Link to={'/'}></Link>
-       <Link to={'movie/:id'}></Link>
-
       <Outlet/>
       </div>
   

@@ -27,7 +27,7 @@ function Nav() {
             <div className={styles.containerNav}>
                 <div className={styles.containerLink}>
 
-                    <Link className={styles.LinkIMG} to={'/'}> <img className={styles.IMG} src={Icon} alt="" /><p>Movies</p></Link>
+                    <Link className={styles.LinkIMG} to={'MoviesRating/'}> <img className={styles.IMG} src={Icon} alt="" /><p>Movies</p></Link>
 
 
                 </div>
