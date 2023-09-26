@@ -1,7 +1,7 @@
 import { Link,useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import styles from '../styles/navbar/navbar.module.css';
-import { BiSolidCameraMovie, BiSearchAlt2 } from 'react-icons/bi';
+import { BiSearchAlt2 } from 'react-icons/bi';
 import Icon from '../img/icon.png';
 
 function Nav() {
