@@ -1,6 +1,7 @@
 {
-  "homepage":"https://PedroPaulo-Git.github.io/MoviesRating",
+  
   "name": "ratting-moveis",
+  "homepage":"https://PedroPaulo-Git.github.io/MoviesRating",
   "private": true,
   "version": "0.0.0",
   "type": "module",
