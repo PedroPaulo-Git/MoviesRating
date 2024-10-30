@@ -2,18 +2,24 @@
    
 }
 
-.conteinerContent_main{ 
+.conteinerContent_main { 
     background-color: rgb(43, 43, 43);
     padding-top: 2%;
-   padding-inline: 5%;
+    padding-inline: 5%;
     justify-content: center;
+    max-width: 100vw; /* Prevent container from exceeding screen width */
+    overflow-x: hidden; /* Hide any overflow horizontally */
 }
-.conteinerContent{ 
+.imgMovie{
+    width: 100%;
+}
+.conteinerContent { 
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10%;
-    
+    column-gap: 2rem; /* Change % gap to rem for more control */
+    width: 100%;
+    max-width: 100%;
 }
 .conteinerContent_img{
     color: #FFFF;
@@ -69,4 +75,40 @@ span{
 .conteinerContent_btn a{
     text-decoration: none;
     color: #000000cc;
+}
+@media screen and (max-width: 950px) {
+    .conteinerContent{ 
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10%;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .conteinerContent{ 
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+   
+    .conteinerContent_img{
+        color: #FFFF;
+        margin: 5%;
+        padding: 5%;
+        margin-inline: 10%;
+        background-color: #b80303cc;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    
+  
 }

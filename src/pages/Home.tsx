@@ -33,7 +33,7 @@ function Home() {
                 {topMovies && topMovies.map((movie: any) => (
                     <div className={styles.conteinerContent_img}>
                         <div>
-                            <img style={{ width: '200px' }} src={imgURL + movie.poster_path} alt="" />
+                            <img className={styles.imgMovie} src={imgURL + movie.poster_path} alt="" />
                           
                         </div>
                        

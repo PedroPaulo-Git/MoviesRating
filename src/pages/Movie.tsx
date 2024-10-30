@@ -28,7 +28,7 @@ function Movie() {
                 {movie &&
                     <div className={styles.conteinerContent_img}>
                         <div className={styles.conteinerContent}>
-                            <img className={styles.img} style={{ width: '300px',borderRadius:'5px' }} src={imgURL + movie.poster_path} alt="" />
+                            <img className={styles.img} src={imgURL + movie.poster_path} alt="" />
 
 
                             <div className={styles.conteinerContent_info}>
