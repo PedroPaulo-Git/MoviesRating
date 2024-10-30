@@ -7,7 +7,7 @@ import styles from "../styles/Search.module.css";
 function Search() {
   const searchURL = import.meta.env.VITE_SEARCH;
   const apiKey = import.meta.env.VITE_API_KEY;
-  const showResultsSearch =  import.meta.env.VITE_API
+  // const showResultsSearch =  import.meta.env.VITE_API
 
   const [searchParams] = useSearchParams();
   const [movies, SetMovies] = useState([]);
@@ -20,6 +20,7 @@ function Search() {
 
     SetMovies(data.results);
     console.log(data.results);
+    console.log(url);
   };
 
   useEffect(() => {
@@ -70,7 +71,7 @@ function Search() {
                   }}
                   className={styles.conteinerContent_btn}
                 >
-                   <Link to={`/MoviesRating/movie/${movie.id}?${apiKey}`}>Detalhes</Link>
+                   <Link to={`/MoviesRating/movie/${movie.id}`}>Detalhes</Link>
                 </button>
               </div>
             </div>

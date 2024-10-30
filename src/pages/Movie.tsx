@@ -14,13 +14,14 @@ function Movie() {
     const getMovie = async (url: URL) => {
         const res = await fetch(url);
         const data = await res.json();
-
+        console.log(data)
         setMovie(data)
-
+        console.log('URL > ',url)
     }
     useEffect(() => {
         const movieUrl: any = `${movieURL}${id}?${apiKey}`;
         getMovie(movieUrl)
+        console.log(movieUrl)
     }, [])
     return (
         <main className={styles.ContainerMovie}>
