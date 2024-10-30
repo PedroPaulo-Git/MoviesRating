@@ -44,11 +44,11 @@ function Home() {
                            <p><FaStar/></p>
                         </span>
 
-                        <button onClick={()=>{
-                                    window.location.href = `/MoviesRating/${movie.id}`;
+                        {/* <button onClick={()=>{
+                                    window.location.href = `${movie.id}`;
                                 }} className={styles.conteinerContent_btn }> 
-
-                        <Link to={`/MoviesRating/${movie.id}`}>Detalhes</Link>   </button>
+</button> */}
+                        <Link to={`${movie.id}`}>Detalhes</Link>   
                     </div>
 
                 )
