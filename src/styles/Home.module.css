@@ -2,8 +2,6 @@
 
 .conteinerContent_main { 
     background-color: rgb(43, 43, 43);
-    padding-top: 2%;
-    padding-inline: 5%;
     justify-content: center;
     max-width: 100vw; /* Prevent container from exceeding screen width */
     overflow-x: hidden; /* Hide any overflow horizontally */
@@ -14,16 +12,17 @@
 .conteinerContent { 
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem; /* Change % gap to rem for more control */
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
     max-width: 100%;
+
 }
 .conteinerContent_img{
     color: #FFFF;
     margin: 5%;
     padding: 5%;
     background-color: #4e4e4ecc;
+    text-align: center;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -55,7 +54,9 @@ span{
     cursor: pointer;
     width: 100%;
     padding: 5%;
-    
+    padding-inline: 2px;
+    text-decoration: none;
+    color: white;
     border: none;
     box-shadow: 2px 5px 8px #292929;
     background-color: #4ff3ff;
@@ -73,12 +74,20 @@ span{
     text-decoration: none;
     color: #000000cc;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1250px) {
     .conteinerContent{ 
         justify-items: center;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 10%;
+        grid-template-columns: repeat(5, 1fr);
+        
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .conteinerContent{ 
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         
     }
 }
@@ -87,14 +96,18 @@ span{
     .conteinerContent{ 
         justify-items: center;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10%;
+        grid-template-columns: repeat(3, 1fr);
         
     }
 }
 
 @media screen and (max-width: 480px) {
-   
+    .conteinerContent{ 
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
     .conteinerContent_btn a{
         font-size: 12px;
     }

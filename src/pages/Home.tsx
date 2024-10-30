@@ -48,7 +48,7 @@ function Home() {
                                     window.location.href = `${movie.id}`;
                                 }} className={styles.conteinerContent_btn }> 
 </button> */}
-                        <Link to={`${movie.id}`}>Detalhes</Link>   
+                        <Link  className={styles.conteinerContent_btn} to={`${movie.id}`}>Detalhes</Link>   
                     </div>
 
                 )
