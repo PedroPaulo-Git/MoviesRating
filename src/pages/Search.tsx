@@ -65,11 +65,11 @@ function Search() {
                
                 <button
                   onClick={() => {
-                    window.location.href = `/MoviesRating/${movie.id}`;
+                    window.location.href = `/MoviesRating/movie/${movie.id}`;
                   }}
                   className={styles.conteinerContent_btn}
                 >
-                   <Link to={`/MoviesRating/${movie.id}`}>Detalhes</Link>
+                   <Link to={`/MoviesRating/movie/${movie.id}`}>Detalhes</Link>
                 </button>
               </div>
             </div>
