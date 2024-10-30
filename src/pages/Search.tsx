@@ -7,6 +7,7 @@ import styles from "../styles/Search.module.css";
 function Search() {
   const searchURL = import.meta.env.VITE_SEARCH;
   const apiKey = import.meta.env.VITE_API_KEY;
+  const showResultsSearch =  import.meta.env.VITE_API
 
   const [searchParams] = useSearchParams();
   const [movies, SetMovies] = useState([]);
@@ -65,11 +66,11 @@ function Search() {
                
                 <button
                   onClick={() => {
-                    window.location.href = `/MoviesRating/movie/${movie.id}`;
+                    window.location.href = `movie/${movie.id}`;
                   }}
                   className={styles.conteinerContent_btn}
                 >
-                   <Link to={`/MoviesRating/movie/${movie.id}`}>Detalhes</Link>
+                   <Link to={`${showResultsSearch}${movie.id}?${apiKey}`}>Detalhes</Link>
                 </button>
               </div>
             </div>
