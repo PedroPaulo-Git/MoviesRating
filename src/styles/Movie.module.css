@@ -9,6 +9,14 @@ padding: 1%;
 height: 100%;
 background-color: rgb(34, 34, 34);
 }
+.ContainerMovie img{
+width: 50%;
+height: 50%;
+}
+.movie_title{
+    font-size: max(1vw,50px);
+
+}
 .conteinerContent{
    display: flex;
    
@@ -20,7 +28,12 @@ background-color: rgb(34, 34, 34);
     margin-left: 2%; 
     color: white;
     position: relative;
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
 }
+
 .overview{
     font-size: 18px;
     padding-bottom: 5%;
@@ -41,8 +54,24 @@ background-color: rgb(34, 34, 34);
 .content_info p {
     display: flex;
 }
-.conteinerContent_otherInfo{
-position: absolute;
-bottom: 0;  
-}
 
+
+@media screen and (max-width: 650px) {
+    p.movie_title{
+        font-size:20px;
+    
+    }
+    .conteinerContent_info span,p{
+        font-size: 12px;
+    
+    }
+    .overview{
+        font-size: 12px;
+    }
+    .conteinerContent_info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+}

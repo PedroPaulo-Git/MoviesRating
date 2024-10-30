@@ -32,22 +32,24 @@ function Movie() {
 
 
                             <div className={styles.conteinerContent_info}>
-
-                                <p style={{ color: '#FFFF', fontSize: '40px', }} key={movie.id}>{movie.title} </p>
-                                <span style={{ color: '#FFFF', fontSize: '20px',}}>
+                                <div>
+                                <p className={styles.movie_title} style={{ color: '#FFFF' }} key={movie.id}>{movie.title} </p>
+                                <span style={{ color: '#FFFF'}}>
                                     <span style={{display:'flex',paddingBottom:'5%',height:'10px'}}>
                                     <p>{movie.vote_average}</p>
                                     <FaStar />
                                     </span>
                                     <p className={styles.overview}> {movie.overview}</p>
                                 </span>  
+                                </div>
+                               
                                
                                 <div className={styles.conteinerContent_otherInfo}>
                                     <div className={styles.content_info}>
                                     
-                                    <p className={styles.popularity}>  <span style={{color:' aquamarine',position:'relative',paddingRight:'3%'}}>Popularidade:</span> {movie.popularity}</p>
-                                    <p className={styles.runtime}>     <span style={{color:' aquamarine',position:'relative',paddingRight:'3%'}}>Tempo:</span> {movie.runtime}h</p>
-                                    <p className={styles.release_date}><span style={{color:' aquamarine',position:'relative',paddingRight:'3%'}}>Data:</span> {movie.release_date}</p>
+                                    <p className={styles.popularity}>  <span style={{color:' aquamarine',position:'relative',paddingRight:'0.5%'}}>Popularidade:</span> {movie.popularity}</p>
+                                    <p className={styles.runtime}>     <span style={{color:' aquamarine',position:'relative',paddingRight:'0.5%'}}>Tempo:</span> {movie.runtime}h</p>
+                                    <p className={styles.release_date}><span style={{color:' aquamarine',position:'relative',paddingRight:'0.5%'}}>Data:</span> {movie.release_date}</p>
                                     </div>
                                 </div>
 

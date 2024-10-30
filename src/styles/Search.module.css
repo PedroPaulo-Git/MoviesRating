@@ -19,12 +19,12 @@
     
 }
 .conteinerContent{
-    
+    height: 100%;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 .conteinerContent_main_img{
     max-width: 210px;
@@ -60,4 +60,15 @@
     box-shadow: 2px 5px 8px #292929;
    
     background-color: #4ff3ff;
+}
+
+@media screen and (max-width: 650px) {
+    .conteinerContent_main{ 
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+        
+    }
+    
 }
