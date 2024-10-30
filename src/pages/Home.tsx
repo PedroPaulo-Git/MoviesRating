@@ -37,7 +37,7 @@ function Home() {
                           
                         </div>
                        
-                        <p key={movie.id}>{movie.title}</p> 
+                        <p className={styles.tittlemovie}  key={movie.id}>{movie.title}</p> 
                         <span className={styles.spanContent}> 
                             
                             {movie.vote_average}

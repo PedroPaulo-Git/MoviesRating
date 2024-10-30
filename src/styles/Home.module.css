@@ -25,11 +25,10 @@
     color: #FFFF;
     margin: 5%;
     padding: 5%;
-    margin-inline: 10%;
     background-color: #4e4e4ecc;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 }
 .spanContent{
@@ -98,17 +97,14 @@ span{
 
 @media screen and (max-width: 480px) {
    
-    .conteinerContent_img{
-        color: #FFFF;
-        margin: 5%;
-        padding: 5%;
-        margin-inline: 10%;
-        background-color: #b80303cc;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+    .conteinerContent_btn a{
+        font-size: 12px;
     }
-    
+    .tittlemovie{
+        font-size: 12px;
+    }
+    .spanContent{
+        font-size: 12px;
+    }
   
 }
